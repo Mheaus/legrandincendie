@@ -379,10 +379,11 @@ section .__shows ._show {}
   font-size: 1.5rem;
 }
 ._show .__dates ._time {
-  font-size: .9rem;
+  font-size: 1rem;
+  margin: .25rem .125rem;
   font-style: italic;
   font-weight: lighter;
-  opacity: .8;
+  opacity: .9;
 }
 ._show .__info {
   line-height: 1.5rem;
