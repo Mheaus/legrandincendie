@@ -143,7 +143,7 @@ a:active {
   }
   section .__header img._title {
     width: 100% !important;
-    margin: 0 auto 1rem !important;
+    margin: -4rem auto 1rem !important;
     padding: 0 !important;
   }
   section .__header::before {
