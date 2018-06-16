@@ -108,10 +108,172 @@ a:active {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 640px) {}
-@media screen and (min-width: 640px) {}
-@media screen and (max-width: 1024px) {}
-@media screen and (min-width: 1024px) {}
+@media screen and (max-height: 640px) {
+  :root {
+    font-size: 12px;
+  }
+  body {
+    overflow-y: scroll;
+  }
+  section {
+    height: auto !important;
+    padding: 1rem !important;
+  }
+  .__credentials {
+    bottom: 0 !important;
+    margin: 4rem 1rem !important;
+    position: relative !important;
+    right: 0 !important;
+  }
+  .__credentials ._item {
+    white-space: normal !important;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 640px) {
+  :root {
+    font-size: 12px;
+  }
+  body {
+    overflow-y: scroll;
+  }
+  section {
+    height: auto !important;
+    padding: 2rem !important;
+  }
+  section .__header img._title {
+    width: 100% !important;
+    margin: 0 auto  1rem !important;
+    padding: 0 !important;
+  }
+  section .__header::before {
+    min-height: 28rem !important;
+    height: auto !important;
+    background-size: contain !important;
+    position: relative !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+  }
+  section .__shows {
+    width: calc(100% - 1rem) !important;
+    margin: 0 !important;
+  }
+  section .__shows ._show {
+    margin-left: 1rem !important;
+  }
+  .__credentials {
+    margin: 0 !important;
+    right: 2rem !important;
+    width: 100% !important;
+  }
+  .__credentials {
+    bottom: 0 !important;
+    margin: 4rem 1rem !important;
+    position: relative !important;
+    right: 0 !important
+  }
+  .__credentials ._item {
+    white-space: normal !important;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-height: 640px) and (min-width: 640px) and (max-width: 768px) {}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+  body {
+    overflow-y: scroll;
+  }
+  section {
+    height: auto !important;
+    padding: 2rem !important;
+  }
+  section .__header img._title {
+    width: 100% !important;
+    margin: 0 auto  1rem !important;
+    padding: 0 !important;
+  }
+  section .__header::before {
+    min-height: 28rem !important;
+    height: auto !important;
+    background-size: contain !important;
+    position: relative !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+  }
+  section .__shows {
+    width: calc(100% - 1rem) !important;
+    margin: 0 !important;
+  }
+  section .__shows ._show {
+    padding-left: 5rem !important;
+  }
+  .__credentials {
+    margin: 0 !important;
+    right: 2rem !important;
+  }
+  .__credentials {
+    bottom: 0 !important;
+    margin: 4rem 1rem !important;
+    position: relative !important;
+    right: 0 !important
+  }
+  .__credentials ._item {
+    white-space: normal !important;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-height: 640px) and (min-width: 768px) {}
+@media screen and (min-height: 640px) and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    font-size: 12px;
+  }
+  section {
+    padding: 2rem !important;
+  }
+
+  section .__header::before {
+    right: 0 !important;
+  }
+  section .__shows {
+    margin-top: -4rem;
+    width: 32rem !important;
+  }
+  section .__shows ._show {
+    margin-left: 2rem;
+  }
+  .__credentials {
+    margin: 0 !important;
+    right: 2rem !important;
+  }
+}
+@media screen and (min-height: 640px) and (min-width: 1024px) {}
+@media screen and (min-height: 640px) and (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    font-size: 12px;
+  }
+  section {
+    padding: 4rem 8rem !important;
+  }
+  section .__header::before {
+    right: 0 !important;
+  }
+  section .__shows {
+    margin-top: -2rem;
+    width: 36rem !important;
+  }
+  section .__shows ._show {
+    margin-left: 4rem;
+  }
+  .__credentials {
+    right: 0 !important;
+  }
+}
+@media screen and (min-height: 640px) and (min-width: 1536px) {}
+
 
 /* LOCALS */
 
@@ -161,12 +323,13 @@ section .__header img._title {
   padding: 4rem 0 0;
   z-index: 2;
 }
-section .__header::after {
+section .__header::before {
   content: "";
   display: block;
   background-image: url("../image/faces.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   top: 4rem;
   right: 8rem;
