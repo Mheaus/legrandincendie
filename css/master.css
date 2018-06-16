@@ -253,7 +253,7 @@ a:active {
 @media screen and (min-height: 640px) and (min-width: 1024px) {}
 @media screen and (min-height: 640px) and (min-width: 1024px) and (max-width: 1536px) {
   :root {
-    font-size: 12px;
+    font-size: 14px;
   }
   section {
     padding: 4rem 8rem !important;
